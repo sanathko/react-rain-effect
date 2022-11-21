@@ -1,0 +1,3 @@
+{
+    "presets": [["react-rain-effect", { "absoluteRuntime": false }]]
+  }
