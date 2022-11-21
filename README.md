@@ -1,19 +1,27 @@
-# Getting Started with Create React App
+# Displaying rain effect with in an HTML page using React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Inspired by - https://freebiesbug.com/code-stuff/rain-drops-effect-with-webgl/
 Code is extended from https://github.com/codrops/RainEffect
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### Installation
+## Install
 
 Run the following command:
 `npm install react-rain-effect` OR `yarn add react-rain-effect`
+
+### Usage
+
+`import { Weather } from 'react-rain-effect`
+
+### How to use the component
+
+`<Weather type="rain"/> `
+`type properties allowed - rain, drizzle, sunny, storm, fallout`
+
+`Other properties allowed `
+`temperature - number (if provided , will show the temperature passed),` 
+`textureOverrides - optional object, if passed, will override the default textures for each  type () `
+`   import TextureRainFg from './background/background01.jpg';`
+`   const textureOverrides = {'falloutFg': TextureRainFg, 'falloutBg': TextureRainBg}`
+`   ALLOWED VALUES FOR textureOverrides - rainFg,rainBg,stormLightningFg, stormLightningBg, falloutFg,falloutBg,sunFg,sunBg, drizzleFg,` `                                         drizzleBg`
+`showTime - boolean (if provided, will show the time asa a day time string)`

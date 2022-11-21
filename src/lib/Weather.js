@@ -5,7 +5,6 @@ import {loadTextures, cleanWeather } from './js/weather-utils';
 
 const Weather = (props) => {
   const {type, temperature, textureOverrides = {}, showTime = false} = props;
-  console.log('TYPE  ', props.type)
   useEffect(() => {
     loadTextures(textureOverrides);
     // when component unmounts
