@@ -19,9 +19,15 @@ Run the following command:
 `type properties allowed - rain, drizzle, sunny, storm, fallout`
 
 `Other properties allowed `
-`temperature - number (if provided , will show the temperature passed),` 
-`textureOverrides - optional object, if passed, will override the default textures for each  type () `
+
+| Name                 | Description      
+| -----------          | -----------      
+| temperature          | number (if provided , will show the temperature passed) otherwise hide it            
+| textureOverrides     | optional object, if passed, will override the default textures for each  type ()             
+|                      |    rainFg,rainBg,stormLightningFg, stormLightningBg, falloutFg,falloutBg,sunFg,sunBg, drizzleFg, drizzleBg             
+| showTime             | boolean (if provided, will show the time asa a day time string)
+
+### How to use textureOverrides (code example)
 `   import TextureRainFg from './background/background01.jpg';`
+
 `   const textureOverrides = {'falloutFg': TextureRainFg, 'falloutBg': TextureRainBg}`
-`   ALLOWED VALUES FOR textureOverrides - rainFg,rainBg,stormLightningFg, stormLightningBg, falloutFg,falloutBg,sunFg,sunBg, drizzleFg,` `                                         drizzleBg`
-`showTime - boolean (if provided, will show the time asa a day time string)`

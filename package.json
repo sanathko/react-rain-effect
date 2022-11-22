@@ -1,6 +1,6 @@
 {
   "name": "react-rain-effect",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "React wrapper for rain effect using web-gl inspired by https://freebiesbug.com/code-stuff/rain-drops-effect-with-webgl/",
   "author": "Sanath Kodikara",
   "keywords": ["react","rain effect","web gl"],
@@ -13,20 +13,18 @@
     "url": "git+https://github.com/sanathko/react-rain-effect.git"
   },
   "dependencies": {
+    "glslify": "^7.0.0",
+    "gsap": "^2.0.2"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1",
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0"
-  },
-  "devDependencies": {
-    "glslify": "^7.0.0",
-    "gsap": "^2.0.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "@babel/cli": "^7.13.14",
-    "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12"
   },
   "peerDependencies": {
     "react": ">=16"
