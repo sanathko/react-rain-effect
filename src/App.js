@@ -1,7 +1,6 @@
 import { useState } from 'react';
+import './lib/css/style.css';
 import Weather from './lib/Weather';
-// import './css/demo.css';
-// import './css/style1.css';
 
 // we can import custom backgrounds and then override the existing ones with those using textureOverrides prop
 // import TextureRainFg from './background/background01.jpg';
@@ -18,7 +17,7 @@ function App() {
 
     function handleClick(event, condition) {
         event.preventDefault();
-        console.log('condition ', condition);
+        // console.log('condition ', condition);
         setWeatherState(condition)
     }
   return (

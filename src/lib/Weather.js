@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import './css/demo.css';
-import './css/style1.css';
 import {loadTextures, cleanWeather } from './js/weather-utils';
 
 const Weather = (props) => {
